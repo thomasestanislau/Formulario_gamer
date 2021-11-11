@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario_gamer.css">
+    
+    <title>Formulario Gamer</title>
+</head>
+
+
+
+<body>
+    <div>
+        <h1>Formulário Gamer</h1><br>
+        <h3>Complete as informações</h3>
+        <br>
+    </div>
+
+    <form>
+        <fieldset>
+            <div class="subcampos">
+                <label for="nome">Nome</label> 
+                <input type="text" id="nome" name="nome" required placeholder="Digite o nome...">
+            </div>
+
+            <div class="subcampos">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite o sobrenome..." required> 
+            </div>
+
+            <div class="subcampos">
+                <label for="email">E-mail</label>  
+                <input type="email" id="email" name="email" placeholder="Informe o e-mail..." required>
+                <br>
+            </div>
+        </fieldset>
+
+        <div class="subcampos">
+            <p>Escolha o seu console atual:</p><br>
+            <label>
+                <input type="radio" id="playstation" name="escolha" value="playstation" checked>Playstation
+            </label>
+
+            <label>
+                <input type="radio" id="nintendo" name="escolha" value="nintendo">Nintendo
+            </label>
+
+            <label>
+                <input type="radio" id="xbox" name="escolha" value="xbox">X-Box
+            </label>
+
+            <label>
+                <input type="radio" id="pc" name="escolha" value="pc">PC Gamer
+            </label><br>
+
+            <p>Caso tenha mais de um console, selecione a 2ª opção:</p><br>
+            <select name="outraopcao" id="outraopcao">
+                <option selected disable value="">Escolha 2ª opção</option>
+                <option>Playstation</option>
+                <option>X-Box</option>
+                <option>Nintendo</option>
+                <option>PC Gamer</option>
+            </select>
+        </div>
+        <br>
+
+        <div class="subcampos">
+            <p>Selecione os seus gêneros favoritos:</p><br>
+            <label>
+                <input type="checkbox" id="aventura" name="aventura" value="aventura">Aventura
+            </label>
+            <label>
+                <input type="checkbox" id="rpg" name="rpg" value="rpg">RPG
+            </label>
+            <label>
+                <input type="checkbox" id="arcade" name="arcade" value="arcade">Arcade
+            </label>
+            <label>
+                <input type="checkbox" id="corrida" name="corrida" value="corrida">Corrida
+            </label>
+            <label>
+                <input type="checkbox" id="fps" name="fps" value="fps">FPS
+            </label>
+            <label>
+                <input type="checkbox" id="luta" name="luta" value="luta">Luta
+            </label>
+        </div><br>
+
+        <div class="subcampos">
+            <p>Qual o seu jogo favorito?</p><br>
+            <textarea name="jogofavorito" id="jogofavorito" cols="25" rows="5"></textarea>
+        </div>
+        <br>
+
+        
+        <div>
+            <button class="botao" type="submit">Concluir</button>
+        </div><br>
+    
+
+    </form>
+
+</body>
+</html>
